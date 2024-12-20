@@ -1,25 +1,30 @@
-class Rect{
-    private int L,B;
-    public void setdata()
+//Program to demonstrate constructor overloading using parameters
+class Data{
+    private int a,b;
+    Data()
     {
-      L=10;
-      B=20;
+        a=10;
+        b=20;
     }
-    public void setdata(int x, int y)
+    Data(int x,int y) //Constructor Overloades
     {
-      L=x;
-      B=y;
+        a=x;
+        b=y;
     }
-    public void showdata()
+    public void area()
     {
-      System.out.println("Lenght of rect is :"+L);
-      System.out.println("Breadth of rect is :"+B);
+        int ar;
+        ar = a*b;
+        System.out.println("area= "+ar);
     }
-    public void Area()
+}
+class Program
+{
+    public static void main(String args[])
     {
-      int ar;
-      ar=L*B;
-      System.out.println("Area of rect is :"+ar);
+        Data d1 =new Data();
+        Data d2=new Data(5,6);
+        d1.area();
+        d2.area();
     }
-  }
-  
+}
