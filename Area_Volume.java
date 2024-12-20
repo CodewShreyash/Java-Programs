@@ -1,3 +1,4 @@
+/* write a Program in java To calculate Volume */
 class Rect{
     private int L, B ;
     static int count;
